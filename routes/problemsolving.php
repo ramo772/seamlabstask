@@ -5,6 +5,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('numbers_without5/{start}/{end}', [ProblemSolvingController::class, 'first_example']);
-Route::get('string_search/{input_string}', [ProblemSolvingController::class, 'second_example']);
-Route::get('third/{q}/{n}', [ProblemSolvingController::class, 'third_example']);
+Route::get('numbers_without5/{start}/{end}', [ProblemSolvingController::class, 'numbers_without_5']);
+Route::get('string_search/{input_string}', [ProblemSolvingController::class, 'input_string']);
+Route::get('reduce_steps/{q}/{n}', [ProblemSolvingController::class, 'reduce_steps']);

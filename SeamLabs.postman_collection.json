@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "b5668719-882e-43e5-b05c-a1e0ed58ee9f",
+		"name": "SeamLabs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17202639"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_name",
+									"value": "nknjkfnasf",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "omar@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "birthdate",
+									"value": "1995-2-7",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01145444659",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "wesdwesd",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_name",
+									"value": "nknjkfnasf2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "wesdwesd",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "All Users",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/users/1"
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\":\"uiojdsakjdnkas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/users/3"
+					},
+					"response": []
+				},
+				{
+					"name": "User Deleted",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\":\"uiojdsakjdnkas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/users/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "number without 5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "{{host}}/problemsolving/numbers_without5/-10/9"
+			},
+			"response": []
+		},
+		{
+			"name": "input_string",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "c",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "{{host}}/problemsolving/string_search/BFG"
+			},
+			"response": []
+		},
+		{
+			"name": "Reduce Steps",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "c",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "{{host}}/problemsolving/third/[3,4]/2"
+			},
+			"response": []
+		}
+	]
+}

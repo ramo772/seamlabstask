@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ProblemSolvingController extends Controller
 {
-    public function first_example($start, $end)
+    public function numbers_without_5($start, $end)
     {
         if ($start < $end) {
             $arr = [];
@@ -30,7 +30,7 @@ class ProblemSolvingController extends Controller
         return $arr;
     }
 
-    public function second_example($input_sting)
+    public function input_string($input_sting)
     {
         $alpha =   ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
         $len = strlen($input_sting);
@@ -45,7 +45,7 @@ class ProblemSolvingController extends Controller
         return 'The result is ' . $res;
     }
 
-    public function third_example($q, $n)
+    public function reduce_steps($q, $n)
     {
         $q = json_decode($q);
         $steps = array_fill(0, $n, 0);
